@@ -1,1 +1,48 @@
+.main {
+    margin: 0 auto;
+    height: 300px;
+    width: 700px;
+    display: flex;
+    margin-top: 50px;
+   
+}
+
+#hit1 {
+    color: green
+}
+#miss1{
+    color: red
+}
+#levo {
+    margin-right: 400px;
+    text-align: center;
+    
+}
+
+#left1 , #score {
+    color:gray
+}
+#pocetakIgre {
+    margin: 20px;
+}
+
+span {
+margin: 10px;
+font-size: 25px;
+}
+
+#donji {
+    margin: 0 auto;
+    height: 300px;
+    width: 700px;
+
+}
+
+.zeleno {
+    color : green
+}
+ 
+.crveno {
+    color : red;
+}
 
