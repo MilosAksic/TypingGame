@@ -22,9 +22,10 @@
 #left1 , #score {
     color:gray
 }
-#pocetakIgre {
+#pocetakIgre  , #stop{
     margin: 20px;
 }
+
 
 span {
 margin: 10px;
@@ -45,4 +46,20 @@ font-size: 25px;
 .crveno {
     color : red;
 }
+#slovo {
+    width: 180px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center
+}
+#stop {
+    display :none;
 
+}
+.sakriveno {
+    display:none;
+
+}
+.prikazano {
+    display : inline-block;
+}

@@ -30,8 +30,13 @@ const Z = document.getElementById('z')
 let random = document.getElementById('random')
 let start = document.getElementById('pocetakIgre')
 let slovo = document.getElementById('slovo')
+let stop = document.getElementById('stop')
 let niz = [];
+ // kreiranje niza 
 
+
+
+ 
 for (let i = 0; i < 26; i++) {
     var add = true;
     var randomNumber = Math.floor(Math.random() * 26) + 1;
@@ -50,26 +55,24 @@ for (let i = 0; i < 26; i++) {
 
 }
 
-// ispisi random broj na ekranu
-
-
-// for ( var z = 0 ; z<niz.length ; z++) {
-
-
-// }
-
-// $('#a').css('color','green');
-
 
 let redniBroj = 1;
 function ispisBroja() {
-    if (redniBroj == 26) {
-        redniBroj = 0
-    }
+    
+    // if (redniBroj == 26) {
+    //     redniBroj = 0
+    // }
+    // var DugmePritsnuto = nekiEvent()
+    // console.log ('iz eventa' + pritisnutKljuc)
+
+    // samo provera
+    // if (pritisnutKljuc == niz[redniBroj-1] + 96 ) {
+    // }
+    // ispisiNiz();
     console.log(redniBroj)
     console.log(niz[redniBroj-1])
     random.innerHTML = niz[redniBroj];
-    switch (niz[redniBroj]){
+    switch (niz[redniBroj-1]){
         case 1 : 
         A.classList.add("zeleno");
         break ;
@@ -160,11 +163,13 @@ function ispisBroja() {
 
 }
 
-// setInterval(ispisBroja, 1000);
+// setInterval(ispisBroja, 1000); proba
 
 document.writeln(niz);
 
 start.addEventListener ('click', function (){
+
+     // vremenski period
         if ( document.getElementById('easy').checked) {
             setInterval(ispisBroja, 5000);
         } else if (document.getElementById('medium').checked) {
@@ -172,6 +177,14 @@ start.addEventListener ('click', function (){
         } else {
             setInterval(ispisBroja, 2000);
         }
+        // checboxovi
+        document.getElementById("easy").disabled = true;
+        document.getElementById("medium").disabled = true;
+        document.getElementById("hard").disabled = true;
+        start.style.display = "none";
+        stop.style.display = "block";
+
+
 })
  var trentniKljuc
 
@@ -187,9 +200,21 @@ start.addEventListener ('click', function (){
 
     var pritisnutKljuc = uniKeyCode(event) ;
     console.log(pritisnutKljuc)
+    return pritisnutKljuc;
     
  }
  
+ function reset (){
+    document.getElementById("easy").disabled = false;
+    document.getElementById("medium").disabled = false;
+    document.getElementById("hard").disabled = false;
+    start.style.display = "block";
+        stop.style.display = "none";
+        niz = [];
+
+ }
+ 
+
   
   
 
