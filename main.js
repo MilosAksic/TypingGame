@@ -163,7 +163,7 @@ function ispisBroja() {
 
 }
 
-// setInterval(ispisBroja, 1000); proba
+
 
 document.writeln(niz);
 
