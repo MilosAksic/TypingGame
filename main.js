@@ -1,29 +1,29 @@
-const A = document.getElementById('a')
-const B = document.getElementById('b')
-const C = document.getElementById('c')
-const D = document.getElementById('d')
-const E = document.getElementById('e')
-const F = document.getElementById('f')
-const G = document.getElementById('g')
-const H = document.getElementById('h')
-const I = document.getElementById('i')
-const J = document.getElementById('j')
-const K = document.getElementById('k')
-const L = document.getElementById('l')
-const M = document.getElementById('m')
-const N = document.getElementById('n')
-const O = document.getElementById('o')
-const P = document.getElementById('p')
-const Q = document.getElementById('q')
-const R = document.getElementById('r')
-const S = document.getElementById('s')
-const T = document.getElementById('t')
-const U = document.getElementById('u')
-const V = document.getElementById('v')
-const W = document.getElementById('w')
-const X = document.getElementById('x')
-const Y = document.getElementById('y')
-const Z = document.getElementById('z')
+const A = document.getElementById('97')
+const B = document.getElementById('98')
+const C = document.getElementById('99')
+const D = document.getElementById('100')
+const E = document.getElementById('101')
+const F = document.getElementById('102')
+const G = document.getElementById('103')
+const H = document.getElementById('104')
+const I = document.getElementById('105')
+const J = document.getElementById('106')
+const K = document.getElementById('107')
+const L = document.getElementById('108')
+const M = document.getElementById('109')
+const N = document.getElementById('110')
+const O = document.getElementById('111')
+const P = document.getElementById('112')
+const Q = document.getElementById('113')
+const R = document.getElementById('114')
+const S = document.getElementById('115')
+const T = document.getElementById('116')
+const U = document.getElementById('117')
+const V = document.getElementById('118')
+const W = document.getElementById('119')
+const X = document.getElementById('120')
+const Y = document.getElementById('121')
+const Z = document.getElementById('122')
 
 
 // niz
@@ -32,9 +32,22 @@ let start = document.getElementById('pocetakIgre')
 let slovo = document.getElementById('slovo')
 let stop = document.getElementById('stop')
 let niz = [];
+
+/// skorovi
+
+let hit = document.getElementById('hit')
+let miss = document.getElementById('miss')
+let left = document.getElementById('left')
+
+//skorovi varijable
+
+let missScore =0
+let hitScore = 0
+let leftScore = 26
+
  // kreiranje niza 
 
-
+function kreiranjeNiza(){
 
  
 for (let i = 0; i < 26; i++) {
@@ -54,103 +67,202 @@ for (let i = 0; i < 26; i++) {
     }
 
 }
+}
 
 
-let redniBroj = 1;
+let redniBroj = 0;
 function ispisBroja() {
     
-    // if (redniBroj == 26) {
-    //     redniBroj = 0
-    // }
-    // var DugmePritsnuto = nekiEvent()
-    // console.log ('iz eventa' + pritisnutKljuc)
-
-    // samo provera
-    // if (pritisnutKljuc == niz[redniBroj-1] + 96 ) {
-    // }
-    // ispisiNiz();
     console.log(redniBroj)
-    console.log(niz[redniBroj-1])
+    console.log(niz[redniBroj])
+    if (redniBroj == 0 ) {
+        
+    }
     random.innerHTML = niz[redniBroj];
-    switch (niz[redniBroj-1]){
+    
+    switch (niz[redniBroj+1]){
         case 1 : 
-        A.classList.add("zeleno");
+        A.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 2 : 
-        B.classList.add("zeleno");
+        B.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 3 : 
-        C.classList.add("zeleno");
+        C.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 4 : 
-        D.classList.add("zeleno");
+        D.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 5 : 
-        E.classList.add("zeleno");
+        E.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 6 : 
-        F.classList.add("zeleno");
+        F.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 7 : 
-        G.classList.add("zeleno");
+        G.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 8 : 
-        H.classList.add("zeleno");
+        H.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 9 : 
-        I.classList.add("zeleno");
+        I.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 10 : 
-        J.classList.add("zeleno");
+        J.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 11 : 
-        K.classList.add("zeleno");
+        K.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 12 : 
-        L.classList.add("zeleno");
+        L.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 13 : 
-        M.classList.add("zeleno");
+        M.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 14 : 
-        N.classList.add("zeleno");
+        N.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 15 : 
-        O.classList.add("zeleno");
+        O.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 16 : 
-        P.classList.add("zeleno");
+        P.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 17 : 
-        Q.classList.add("zeleno");
+        Q.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 18 : 
-        R.classList.add("zeleno");
+        R.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 19 : 
-        S.classList.add("zeleno");
+        S.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 20 : 
-        T.classList.add("zeleno");
+        T.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 21 : 
-        U.classList.add("zeleno");
+        U.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 22 : 
-        V.classList.add("zeleno");
+        V.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 23 : 
-        W.classList.add("zeleno");
+        W.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 24 : 
-        X.classList.add("zeleno");
+        X.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
         case 25 : 
-        Y.classList.add("zeleno");
+        Y.classList.add("crveno");
+        missScore++
+        miss.innerHTML = missScore
+        leftScore--
+        left.innerHTML = leftScore
         break ;
 
         case 26 : 
-       Z.classList.add("zeleno");
+       Z.classList.add("crveno");
+       missScore++
+       miss.innerHTML = missScore
+       leftScore--
+       left.innerHTML = leftScore
         break ;
 
 
@@ -168,6 +280,9 @@ function ispisBroja() {
 document.writeln(niz);
 
 start.addEventListener ('click', function (){
+          kreiranjeNiza() // poziv niza
+          console.log(niz);
+          
 
      // vremenski period
         if ( document.getElementById('easy').checked) {
@@ -199,6 +314,199 @@ start.addEventListener ('click', function (){
  }
 
     var pritisnutKljuc = uniKeyCode(event) ;
+    if (pritisnutKljuc == niz[redniBroj-1]+96) {
+        console.log ('pogodak')
+        switch (niz[redniBroj-1]){
+            case 1 : 
+            A.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 2 : 
+            B.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 3 : 
+            C.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 4 : 
+            D.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 5 : 
+            E.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 6 : 
+            F.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 7 : 
+            G.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 8 : 
+            H.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 9 : 
+            I.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 10 : 
+            J.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 11 : 
+            K.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 12 : 
+            L.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 13 : 
+            M.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 14 : 
+            N.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 15 : 
+            O.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 16 : 
+            P.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 17 : 
+            Q.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 18 : 
+            R.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 19 : 
+            S.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 20 : 
+            T.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 21 : 
+            U.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 22 : 
+            V.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 23 : 
+            W.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 24 : 
+            X.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+            case 25 : 
+            Y.classList.add("zeleno");
+            hitScore++
+            hit.innerHTML =hitScore
+            leftScore--
+            left.innerHTML = leftScore
+            break ;
+    
+            case 26 : 
+           Z.classList.add("zeleno");
+           hitScore++
+            hit.innerHTML =hitScore
+           leftScore--
+           left.innerHTML = leftScore
+            break ;
+    
+    
+            
+    
+        }
+        redniBroj++
+    }
     console.log(pritisnutKljuc)
     return pritisnutKljuc;
     
@@ -208,14 +516,29 @@ start.addEventListener ('click', function (){
     document.getElementById("easy").disabled = false;
     document.getElementById("medium").disabled = false;
     document.getElementById("hard").disabled = false;
+    resetPolja()
     start.style.display = "block";
         stop.style.display = "none";
         niz = [];
+         missScore = 0
+         hitScore = 0
+        leftScore = 26
+        random.innerHTML = 0;
+
+        miss.innerHTML = missScore
+        hit.innerHTML = hitScore
+        left.innerHTML = leftScore
+
 
  }
  
 
-  
+  function resetPolja() {
+      for ( let i = 97 ; i<123 ; i++) {
+          document.getElementById (`${i}`).classList.remove("crveno")
+          document.getElementById (`${i}`).classList.remove("zeleno")
+      }
+  }
   
 
   
