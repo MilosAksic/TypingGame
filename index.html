@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
 </head>
@@ -24,8 +24,8 @@
             <button id="pocetakIgre">Start game</button>
             <button id="stop" onclick="reset()">Stop</button>
             <h3 id="random">0</h3>
-            <input type="text" placeholder="Input Letter" id="slovo" onkeypress="nekiEvent ()">
-            <h3 id="demo2"></h3>
+            <input type="text" placeholder="Input Letter" id="slovo" onkeyup ="nekiEvent ()">
+            <!-- <h3 id="demo2"></h3> -->
         </div>
         <div id="desno">
             <h4 id="score">SCORE</h4>
@@ -38,54 +38,55 @@
     </div>
 
     <div id="donji">
-        <h3>
-            <span id="97">A(1) </span>
-            <span id="98">B(2) </span>
-            <span id="99">C(3) </span>
-            <span id="100">D(4) </span>
-            <span id="101">E(5) </span>
-            <span id="102">F(6) </span>
-        </h3>
-        <h3>
-            <span id="103">G(7) </span>
-            <span id="104">H(8) </span>
-            <span id="105">I(9) </span>
-            <span id="106">J(10)</span>
-            <span id="107">K(11)</span>
-            <span id="108">L(12)</span>
-        </h3>
-        <h3>
-            <span id="109">M(13)</span>
-            <span id="110">N(14)</span>
-            <span id="111">O(15)</span>
-            <span id="112">P(16)</span>
-            <span id="113">Q(17)</span>
-            <span id="114">R(18)</span>
-        </h3>
-        <h3>
-            <span id="115">S(19)</span>
-            <span id="116">T(20)</span>
-            <span id="117">U(21)</span>
-            <span id="118">V(22</span>
-            <span id="119"> W(23)</span>
-            <span id="120">X(24)</span>
-        </h3>
-        <h3>
-            <span id="121">Y(25) </span>
-            <span id="122">Z(26) </span>
-        </h3>
+       <div class="grid"> 
+           
+            <span id="65" class="grid-item">A(1) </span>
+            <span id="66" class="grid-item">B(2) </span>
+            <span id="67" class="grid-item">C(3) </span>
+            <span id="68" class="grid-item">D(4) </span>
+            <span id="69" class="grid-item">E(5) </span>
+            <span id="70" class="grid-item">F(6) </span>
+        
+        
+    
+        
+            <span id="71" class="grid-item">G(7) </span>
+            <span id="72" class="grid-item">H(8) </span>
+            <span id="73" class="grid-item">I(9) </span>
+            <span id="74" class="grid-item">J(10)</span>
+            <span id="75" class="grid-item">K(11)</span>
+            <span id="76" class="grid-item">L(12)</span>
+        
+        
+            <span id="77" class="grid-item">M(13)</span>
+            <span id="78" class="grid-item">N(14)</span>
+            <span id="79" class="grid-item">O(15)</span>
+            <span id="80" class="grid-item">P(16)</span>
+            <span id="81" class="grid-item">Q(17)</span>
+            <span id="82" class="grid-item">R(18)</span>
+        
+        
+            <span id="83" class="grid-item">S(19)</span>
+            <span id="84" class="grid-item">T(20)</span>
+            <span id="85" class="grid-item">U(21)</span>
+            <span id="86" class="grid-item">V(22)</span>
+            <span id="87" class="grid-item"> W(23)</span>
+            <span id="88" class="grid-item">X(24)</span>  
+            <span id="89" class="grid-item">Y(25) </span>
+            <span id="90" class="grid-item">Z(26) </span>
+
+        </div>
+        
     </div>
 
 
 
 
 
-    <script src="bootstrap/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="bootstrap/bootstrap.min.js"></script>
+  
+  
     <script src="main.js"></script>
 </body>
 
 </html>
+
