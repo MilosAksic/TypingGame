@@ -280,6 +280,7 @@ document.writeln(niz);
 
 start.addEventListener ('click', function (){
           kreiranjeNiza() // poziv niza
+          random.innerHTML = niz[0]
           console.log(niz);
           
 
