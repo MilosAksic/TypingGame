@@ -1,29 +1,29 @@
-const A = document.getElementById('97')
-const B = document.getElementById('98')
-const C = document.getElementById('99')
-const D = document.getElementById('100')
-const E = document.getElementById('101')
-const F = document.getElementById('102')
-const G = document.getElementById('103')
-const H = document.getElementById('104')
-const I = document.getElementById('105')
-const J = document.getElementById('106')
-const K = document.getElementById('107')
-const L = document.getElementById('108')
-const M = document.getElementById('109')
-const N = document.getElementById('110')
-const O = document.getElementById('111')
-const P = document.getElementById('112')
-const Q = document.getElementById('113')
-const R = document.getElementById('114')
-const S = document.getElementById('115')
-const T = document.getElementById('116')
-const U = document.getElementById('117')
-const V = document.getElementById('118')
-const W = document.getElementById('119')
-const X = document.getElementById('120')
-const Y = document.getElementById('121')
-const Z = document.getElementById('122')
+const A = document.getElementById('65')
+const B = document.getElementById('66')
+const C = document.getElementById('67')
+const D = document.getElementById('68')
+const E = document.getElementById('69')
+const F = document.getElementById('70')
+const G = document.getElementById('71')
+const H = document.getElementById('72')
+const I = document.getElementById('73')
+const J = document.getElementById('74')
+const K = document.getElementById('75')
+const L = document.getElementById('76')
+const M = document.getElementById('77')
+const N = document.getElementById('78')
+const O = document.getElementById('79')
+const P = document.getElementById('80')
+const Q = document.getElementById('81')
+const R = document.getElementById('82')
+const S = document.getElementById('83')
+const T = document.getElementById('84')
+const U = document.getElementById('85')
+const V = document.getElementById('86')
+const W = document.getElementById('87')
+const X = document.getElementById('88')
+const Y = document.getElementById('89')
+const Z = document.getElementById('90')
 
 
 // niz
@@ -80,7 +80,7 @@ function ispisBroja() {
     }
     random.innerHTML = niz[redniBroj];
     // ne radi kako treba samo + ili -, nije sigurno
-    switch (niz[redniBroj+1]){
+    switch (niz[redniBroj]){
         case 1 : 
         A.classList.add("crveno");
         missScore++
@@ -281,6 +281,7 @@ document.writeln(niz);
 
 start.addEventListener ('click', function (){
           kreiranjeNiza() // poziv niza
+          random.innerHTML=niz[0]
           console.log(niz);
           
 
@@ -307,18 +308,20 @@ start.addEventListener ('click', function (){
  function nekiEvent (){
     function uniKeyCode(event) {
         var key = event.which;
-        document.getElementById("demo2").innerHTML = "Unicode KEY code: " + key;
+        slovo.value = ""
+        // document.getElementById("demo2").innerHTML = "Unicode KEY code: " + key;
         return key;
         
 
  }
 
     var pritisnutKljuc = uniKeyCode(event) ;
-    if (pritisnutKljuc == niz[redniBroj-1]+96) {
+    if (pritisnutKljuc == niz[redniBroj]+64) {
         console.log ('pogodak')
-        switch (niz[redniBroj-1]){
+        switch (niz[redniBroj]){
             case 1 : 
             A.classList.add("zeleno");
+            A.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -326,6 +329,7 @@ start.addEventListener ('click', function (){
             break ;
             case 2 : 
             B.classList.add("zeleno");
+            B.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -333,6 +337,7 @@ start.addEventListener ('click', function (){
             break ;
             case 3 : 
             C.classList.add("zeleno");
+            C.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -340,6 +345,7 @@ start.addEventListener ('click', function (){
             break ;
             case 4 : 
             D.classList.add("zeleno");
+            D.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -347,6 +353,7 @@ start.addEventListener ('click', function (){
             break ;
             case 5 : 
             E.classList.add("zeleno");
+            A.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -354,6 +361,7 @@ start.addEventListener ('click', function (){
             break ;
             case 6 : 
             F.classList.add("zeleno");
+            F.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -361,6 +369,7 @@ start.addEventListener ('click', function (){
             break ;
             case 7 : 
             G.classList.add("zeleno");
+            G.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -368,6 +377,7 @@ start.addEventListener ('click', function (){
             break ;
             case 8 : 
             H.classList.add("zeleno");
+            H.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -375,6 +385,7 @@ start.addEventListener ('click', function (){
             break ;
             case 9 : 
             I.classList.add("zeleno");
+            I.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -382,6 +393,7 @@ start.addEventListener ('click', function (){
             break ;
             case 10 : 
             J.classList.add("zeleno");
+            J.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -389,6 +401,7 @@ start.addEventListener ('click', function (){
             break ;
             case 11 : 
             K.classList.add("zeleno");
+            K.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -396,6 +409,7 @@ start.addEventListener ('click', function (){
             break ;
             case 12 : 
             L.classList.add("zeleno");
+            L.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -403,6 +417,7 @@ start.addEventListener ('click', function (){
             break ;
             case 13 : 
             M.classList.add("zeleno");
+            A.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -410,6 +425,7 @@ start.addEventListener ('click', function (){
             break ;
             case 14 : 
             N.classList.add("zeleno");
+            N.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -417,6 +433,7 @@ start.addEventListener ('click', function (){
             break ;
             case 15 : 
             O.classList.add("zeleno");
+            O.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -424,6 +441,7 @@ start.addEventListener ('click', function (){
             break ;
             case 16 : 
             P.classList.add("zeleno");
+            P.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -431,6 +449,7 @@ start.addEventListener ('click', function (){
             break ;
             case 17 : 
             Q.classList.add("zeleno");
+            Q.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -438,6 +457,7 @@ start.addEventListener ('click', function (){
             break ;
             case 18 : 
             R.classList.add("zeleno");
+            R.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -445,6 +465,7 @@ start.addEventListener ('click', function (){
             break ;
             case 19 : 
             S.classList.add("zeleno");
+            S.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -452,6 +473,7 @@ start.addEventListener ('click', function (){
             break ;
             case 20 : 
             T.classList.add("zeleno");
+            T.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -459,6 +481,7 @@ start.addEventListener ('click', function (){
             break ;
             case 21 : 
             U.classList.add("zeleno");
+            U.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -466,6 +489,7 @@ start.addEventListener ('click', function (){
             break ;
             case 22 : 
             V.classList.add("zeleno");
+            V.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -473,6 +497,7 @@ start.addEventListener ('click', function (){
             break ;
             case 23 : 
             W.classList.add("zeleno");
+            W.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -480,6 +505,7 @@ start.addEventListener ('click', function (){
             break ;
             case 24 : 
             X.classList.add("zeleno");
+            X.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -487,6 +513,7 @@ start.addEventListener ('click', function (){
             break ;
             case 25 : 
             Y.classList.add("zeleno");
+            Y.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -495,6 +522,7 @@ start.addEventListener ('click', function (){
     
             case 26 : 
            Z.classList.add("zeleno");
+           Z.classList.remove("crveno");
            hitScore++
             hit.innerHTML =hitScore
            leftScore--
@@ -517,7 +545,7 @@ start.addEventListener ('click', function (){
     document.getElementById("medium").disabled = false;
     document.getElementById("hard").disabled = false;
     resetPolja()
-    start.style.display = "block";
+        start.style.display = "block";
         stop.style.display = "none";
         niz = [];
          missScore = 0
@@ -534,7 +562,7 @@ start.addEventListener ('click', function (){
  
 
   function resetPolja() {
-      for ( let i = 97 ; i<123 ; i++) {
+      for ( let i = 65 ; i<91 ; i++) {
           document.getElementById (`${i}`).classList.remove("crveno")
           document.getElementById (`${i}`).classList.remove("zeleno")
       }
@@ -543,8 +571,5 @@ start.addEventListener ('click', function (){
 
   
   
-
-
- 
 
 
