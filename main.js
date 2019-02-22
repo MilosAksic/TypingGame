@@ -79,7 +79,7 @@ function ispisBroja() {
         
     }
     random.innerHTML = niz[redniBroj];
-    
+    // ne radi kako treba samo + ili -, nije sigurno
     switch (niz[redniBroj+1]){
         case 1 : 
         A.classList.add("crveno");
