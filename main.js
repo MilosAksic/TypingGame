@@ -75,12 +75,11 @@ function ispisBroja() {
     
     console.log(redniBroj)
     console.log(niz[redniBroj])
+    random.innerHTML = niz[redniBroj];
     if (redniBroj == 0 ) {
         
     }
-    random.innerHTML = niz[redniBroj];
-    
-    switch (niz[redniBroj+1]){
+    switch (niz[redniBroj]){
         case 1 : 
         A.classList.add("crveno");
         missScore++
@@ -314,11 +313,12 @@ start.addEventListener ('click', function (){
  }
 
     var pritisnutKljuc = uniKeyCode(event) ;
-    if (pritisnutKljuc == niz[redniBroj-1]+96) {
+    if (pritisnutKljuc == niz[redniBroj]+96) {
         console.log ('pogodak')
-        switch (niz[redniBroj-1]){
+        switch (niz[redniBroj]){
             case 1 : 
             A.classList.add("zeleno");
+            A.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -326,6 +326,7 @@ start.addEventListener ('click', function (){
             break ;
             case 2 : 
             B.classList.add("zeleno");
+            B.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -333,6 +334,7 @@ start.addEventListener ('click', function (){
             break ;
             case 3 : 
             C.classList.add("zeleno");
+            C.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -340,6 +342,7 @@ start.addEventListener ('click', function (){
             break ;
             case 4 : 
             D.classList.add("zeleno");
+            D.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -347,6 +350,7 @@ start.addEventListener ('click', function (){
             break ;
             case 5 : 
             E.classList.add("zeleno");
+            E.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -354,6 +358,7 @@ start.addEventListener ('click', function (){
             break ;
             case 6 : 
             F.classList.add("zeleno");
+            F.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -361,6 +366,7 @@ start.addEventListener ('click', function (){
             break ;
             case 7 : 
             G.classList.add("zeleno");
+            G.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -368,6 +374,7 @@ start.addEventListener ('click', function (){
             break ;
             case 8 : 
             H.classList.add("zeleno");
+            H.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -375,6 +382,7 @@ start.addEventListener ('click', function (){
             break ;
             case 9 : 
             I.classList.add("zeleno");
+            I.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -382,6 +390,7 @@ start.addEventListener ('click', function (){
             break ;
             case 10 : 
             J.classList.add("zeleno");
+            J.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -389,6 +398,7 @@ start.addEventListener ('click', function (){
             break ;
             case 11 : 
             K.classList.add("zeleno");
+            K.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -396,6 +406,7 @@ start.addEventListener ('click', function (){
             break ;
             case 12 : 
             L.classList.add("zeleno");
+            L.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -403,6 +414,7 @@ start.addEventListener ('click', function (){
             break ;
             case 13 : 
             M.classList.add("zeleno");
+            M.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -410,6 +422,7 @@ start.addEventListener ('click', function (){
             break ;
             case 14 : 
             N.classList.add("zeleno");
+            N.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -417,6 +430,7 @@ start.addEventListener ('click', function (){
             break ;
             case 15 : 
             O.classList.add("zeleno");
+            O.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -424,6 +438,7 @@ start.addEventListener ('click', function (){
             break ;
             case 16 : 
             P.classList.add("zeleno");
+            P.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -431,6 +446,7 @@ start.addEventListener ('click', function (){
             break ;
             case 17 : 
             Q.classList.add("zeleno");
+            Q.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -438,6 +454,7 @@ start.addEventListener ('click', function (){
             break ;
             case 18 : 
             R.classList.add("zeleno");
+            R.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -445,6 +462,7 @@ start.addEventListener ('click', function (){
             break ;
             case 19 : 
             S.classList.add("zeleno");
+            S.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -452,6 +470,7 @@ start.addEventListener ('click', function (){
             break ;
             case 20 : 
             T.classList.add("zeleno");
+            T.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -459,6 +478,7 @@ start.addEventListener ('click', function (){
             break ;
             case 21 : 
             U.classList.add("zeleno");
+            U.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -466,6 +486,7 @@ start.addEventListener ('click', function (){
             break ;
             case 22 : 
             V.classList.add("zeleno");
+            V.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -473,6 +494,7 @@ start.addEventListener ('click', function (){
             break ;
             case 23 : 
             W.classList.add("zeleno");
+            W.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -480,6 +502,7 @@ start.addEventListener ('click', function (){
             break ;
             case 24 : 
             X.classList.add("zeleno");
+            X.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -487,6 +510,7 @@ start.addEventListener ('click', function (){
             break ;
             case 25 : 
             Y.classList.add("zeleno");
+            Y.classList.remove("crveno");
             hitScore++
             hit.innerHTML =hitScore
             leftScore--
@@ -495,6 +519,7 @@ start.addEventListener ('click', function (){
     
             case 26 : 
            Z.classList.add("zeleno");
+           Z.classList.remove("crveno");
            hitScore++
             hit.innerHTML =hitScore
            leftScore--
